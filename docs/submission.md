@@ -53,7 +53,9 @@ Each user message holds 8 posts rendered as `### id=... / title / company / loca
 
 ## 6. Key design decisions I made
 
-Claude Code (Sonnet 5.5) wrote the code under my direction, as noted in section 2. The design choices below are mine.
+**AI usage summary:** Claude Code (Sonnet 5.5) wrote the implementation code — the fetchers, deduper, tagger, pipeline, and the site HTML. Claude Haiku 5.5 runs the production tagging. I used both as tools, the same way I would use a compiler or a library. The parts below are what I decided, iterated on, and would defend in a live call: the architecture, the data sources, the taxonomy, and the trade-offs.
+
+The design choices below are mine.
 
 **Don't scrape. Use official ATS APIs.**
 My first instinct was to hit Naukri/Internshala/LinkedIn. I ruled that out: ToS risk, bot detection, and brittle HTML parsers. Every major tech company posts on a public ATS (Greenhouse, Lever, Ashby, SmartRecruiters, Workable) that returns structured JSON. I hand-picked the 55 boards in `jobpipe/config.py` — a mix of India-headquartered companies (Paytm, Meesho, CRED, Groww, InMobi, Glance, Sarvam AI, apna) and global tech firms with India engineering centres (Stripe, MongoDB, Databricks, Okta, Bosch, Freshworks, ServiceNow). That list is my editorial call, not an algorithm.
