@@ -2,7 +2,7 @@
 
 ## 1. Data
 - `docs/jobs_data.csv`: all 225 published posts (title, company, city, role, job type, source, apply URL).
-- `data/eval_sheet.csv`: 50 seeded-random posts for the hand-check (verdict columns still blank).
+- `data/eval_sheet.csv`: 50 seeded-random posts for the hand-check (verdicts filled; see section 4).
 - Sources: public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Workable), 55 company boards. No scraping of job portals.
 
 ## 2. AI tools used
@@ -39,7 +39,10 @@ Each element: {"id": str, "role": str, "city": str, "job_type": str, "fresher_ok
 Each user message holds 8 posts rendered as `### id=... / title / company / location / description[:1500]`.
 
 ## 4. Numbers (to fill after the LLM run)
-- Tagging accuracy on 50 hand-checked posts: TODO
+- Tagging accuracy on the 50-post sample (49 judged; 1 excluded because its title was too vague): role 46/49 = 94%, city 46/49 = 94%, job type 19/26 = 73%.
+  - Job type was judged only where the live post states an experience requirement (26 of 49). The other 23 are not counted, so the 73% figure rests on a smaller sample.
+  - **Method, stated plainly:** these verdicts were made by Claude reading each post's title, location and full description, not by me by hand. I have not independently re-checked them. Per-row verdicts and reasons are in `data/eval_sheet.csv`.
+  - Main errors found: Noida/Bangalore posts tagged "Other India" (3), roles requiring 2-6 yrs tagged "fresher / 0-1 yr" (5), one post requiring 4+ yrs tagged 1-2 yrs, one MiL/SiL software-testing role tagged Hardware.
 - Cost per 1,000 posts: ~$0.111 (OpenRouter-reported spend, 416 posts; data/usage.jsonl)
 
 ## 5. What broke and how it was fixed
@@ -66,3 +69,22 @@ The cost target was <$0.20 per 1,000 posts. Opus/Sonnet would over-qualify the t
 
 **Taxonomy I defined.**
 16 role buckets, 11 city buckets, 4 job-type buckets — I wrote the full taxonomy and the city-mapping rules (Gurgaon/Noida/Faridabad → Delhi NCR; Navi Mumbai/Thane → Mumbai; "Remote India" vs. city-agnostic global remote). The LLM's task is to apply my taxonomy, not invent its own.
+
+## 7. Research: 3 things I found
+
+All numbers come from the pipeline output of the 2026-11-19 run (`data/jobs.json` meta, `data/board_stats.json`, `data/dedupe_log.json`). To check them: run `python3 -m jobpipe.pipeline` and read those files.
+
+**1. Only 2 out of 100 job posts are useful for a fresher.**
+I pulled 10,410 posts from 63 company boards. 2,403 are in India. 511 look entry level after my pre-filter. 397 are left after dedupe, and 210 are published after the LLM tagging. So the yield is 2.0%.
+Proof: `data/board_stats.json` (total 10,410 / india 2,403 / candidates 511), `data/jobs.json` meta (after_dedupe 397, count 210).
+Why it matters: "200+ fresher jobs" needs a very wide net. A few boards will never give 200. Also the count moves every day: it was 225 one day before and 210 now, so the number is close to the limit, not safe.
+
+**2. Three companies are more than half of the list, and two roles are almost nothing.**
+apna 65, Paytm 31, Bosch 21. That is 117 of 210, so 56%. Without apna only 145 posts are left. Sales (52) and Customer Support (38) are 43% of everything. AI / ML has 1 post and Design / UX has 1 post.
+Proof: company and role counts from `data/jobs.json` (`Counter` on the `company` and `role` fields). Raw per-board numbers in `data/board_stats.json`: Bosch gave 110 candidates and apna 109 out of 511.
+Why it matters: a fresher who wants an AI or design job finds almost nothing, even if the list looks big. Also apna posts the same job again for every city (Field Sales in Vadodara, Pune, Surat, Gandhinagar, Lucknow), so the fuzzy dedupe only works inside one city bucket and these stay as separate rows. For a product I would show the company mix on the page and not hide it.
+
+**3. Many "fresher" jobs are not really fresher, and the tags are not equally sure.**
+Of the 210 posts, 109 (52%) are fresher / 0-1 yr, 15 (7%) are internships, and 86 (41%) ask for 1-2 years. 53 posts (25%) have model confidence under 0.7.
+Proof: `job_type` and `confidence` fields in `data/jobs.json`. Example of a bad source field: post 45 in `data/eval_review.md` has "Navi Mumbai" in the title but "Bengaluru, Karnataka" in the location field.
+Why it matters: if I filtered only by title words ("fresher", "intern") I would miss or mislabel almost half. And the location field from the company can be wrong, so city tags must read the title and the text too, not only the field. The 53 low-confidence posts are the first ones to hand-check.

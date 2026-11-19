@@ -22,4 +22,4 @@ Job portals that forbid scraping (Naukri, Internshala, LinkedIn) are deliberatel
 ## Accuracy and cost
 Fill `data/eval_sheet.csv` (50 seeded-random posts, `python scripts/make_eval_sheet.py`) and run `python scripts/score_eval.py`.
 Cost per 1,000 posts is computed from logged token usage in `data/usage.jsonl` (`cost_summary`).
-Tagged with Claude Haiku 5.5 via OpenRouter (`OPENROUTER_API_KEY`); measured cost ~$0.11 per 1,000 posts. Hand-check accuracy: TODO.
+Tagged with Claude Haiku 5.5 via OpenRouter (`OPENROUTER_API_KEY`); measured cost ~$0.11 per 1,000 posts. Accuracy on a 50-post sample (Claude-reviewed, not human hand-checked): role 94%, city 94%, job type 73% (where experience is stated). See `docs/submission.md`.
