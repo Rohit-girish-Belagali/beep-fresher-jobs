@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresher Jobs India - refreshed daily</title>
+<style>
+:root{--bg:#fafaf7;--ink:#1a1a17;--mut:#6b6b63;--line:#e4e3dc;--acc:#1f5eff}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:28px 20px 12px;max-width:1000px;margin:auto}h1{margin:0 0 4px;font-size:26px}
+.sub{color:var(--mut)}main{max-width:1000px;margin:auto;padding:0 20px 60px}
+.bar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:8px;margin:16px 0}
+@media(max-width:700px){.bar{grid-template-columns:1fr 1fr}.bar input{grid-column:1/3}}
+input,select{padding:10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff;width:100%}
+.job{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.job h3{margin:0;font-size:16px}.job h3 a{color:var(--ink);text-decoration:none}.job h3 a:hover{color:var(--acc)}
+.co{color:var(--mut);margin:2px 0 8px}.tags span{display:inline-block;font-size:12px;padding:2px 9px;border-radius:99px;background:#eef2ff;color:#2a46a8;margin:0 6px 4px 0}
+.tags span.t{background:#ecf7ee;color:#216b34}.tags span.n{background:#fff3e0;color:#9a5b00}
+.snip{color:var(--mut);font-size:13px;margin-top:4px}#count{margin:8px 0;color:var(--mut)}
+button{padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;font:inherit;cursor:pointer}
+</style></head><body>
+<header><h1>Fresher jobs &amp; internships in India</h1>
+<div class="sub" id="meta">Loading…</div></header>
+<main>
+<div class="bar"><input id="q" placeholder="Search title, company, skill…" autofocus>
+<select id="role"><option value="">All roles</option></select>
+<select id="city"><option value="">All cities</option></select>
+<select id="type"><option value="">Internship + Full-time</option></select></div>
+<div id="count"></div><div id="list"></div><button id="more" hidden>Show more</button>
+</main>
+<script>
+const $=id=>document.getElementById(id);let ALL=[],shown=50,F=[];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function opts(el,key){const c={};ALL.forEach(j=>c[j[key]]=(c[j[key]]||0)+1);
+ Object.entries(c).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>el.insertAdjacentHTML("beforeend",`<option value="${esc(k)}">${esc(k)} (${v})</option>`));}
+function ago(d){const days=Math.floor((Date.now()-new Date(d))/864e5);return days<1?"today":days+"d ago"}
+function render(){const q=$("q").value.toLowerCase().split(/\s+/).filter(Boolean),r=$("role").value,c=$("city").value,t=$("type").value;
+ F=ALL.filter(j=>(!r||j.role===r)&&(!c||j.city===c)&&(!t||j.job_type===t)&&q.every(w=>(j.title+" "+j.company+" "+j.snippet+" "+j.role).toLowerCase().includes(w)));
+ $("count").textContent=`${F.length} of ${ALL.length} posts`;
+ $("list").innerHTML=F.slice(0,shown).map(j=>`<div class="job"><h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
+ <div class="co">${esc(j.company)} · ${esc(j.location)} · first seen ${ago(j.first_seen)}</div>
+ <div class="tags"><span>${esc(j.role)}</span><span>${esc(j.city)}</span><span class="${j.job_type==="Internship"?"t":"n"}">${esc(j.job_type)}</span></div>
+ <div class="snip">${esc(j.snippet)}…</div></div>`).join("");
+ $("more").hidden=F.length<=shown}
+fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{ALL=d.jobs;const m=d.meta;
+ $("meta").textContent=`${m.count} live posts from ${m.boards} company career boards · last refreshed ${new Date(m.updated_at).toLocaleString()} · refreshes daily`;
+ opts($("role"),"role");opts($("city"),"city");opts($("type"),"job_type");render()});
+["q","role","city","type"].forEach(i=>$(i).addEventListener("input",()=>{shown=50;render()}));
+$("more").onclick=()=>{shown+=50;render()};
+</script></body></html>
