@@ -13,7 +13,7 @@ input,select{padding:10px;border:1px solid var(--line);border-radius:8px;font:in
 .job h3{margin:0;font-size:16px}.job h3 a{color:var(--ink);text-decoration:none}.job h3 a:hover{color:var(--acc)}
 .co{color:var(--mut);margin:2px 0 8px}.tags span{display:inline-block;font-size:12px;padding:2px 9px;border-radius:99px;background:#eef2ff;color:#2a46a8;margin:0 6px 4px 0}
 .tags span.t{background:#ecf7ee;color:#216b34}.tags span.n{background:#fff3e0;color:#9a5b00}
-.snip{color:var(--mut);font-size:13px;margin-top:4px}#count{margin:8px 0;color:var(--mut)}
+.snip{color:var(--mut);font-size:13px;margin-top:4px;line-height:1.45;overflow-wrap:anywhere;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}#count{margin:8px 0;color:var(--mut)}
 button{padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;font:inherit;cursor:pointer}
 </style></head><body>
 <header><h1>Fresher jobs &amp; internships in India</h1>
@@ -27,6 +27,7 @@ button{padding:10px 16px;border:0;border-radius:8px;background:var(--acc);color:
 </main>
 <script>
 const $=id=>document.getElementById(id);let ALL=[],shown=50,F=[];
+const clean=s=>String(s??"").replace(/[\s\u00a0\u200b]+/g," ").trim();
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function opts(el,key){const c={};ALL.forEach(j=>c[j[key]]=(c[j[key]]||0)+1);
  Object.entries(c).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>el.insertAdjacentHTML("beforeend",`<option value="${esc(k)}">${esc(k)} (${v})</option>`));}
@@ -37,7 +38,7 @@ function render(){const q=$("q").value.toLowerCase().split(/\s+/).filter(Boolean
  $("list").innerHTML=F.slice(0,shown).map(j=>`<div class="job"><h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
  <div class="co">${esc(j.company)} · ${esc(j.location)} · first seen ${ago(j.first_seen)}</div>
  <div class="tags"><span>${esc(j.role)}</span><span>${esc(j.city)}</span><span class="${j.job_type==="Internship"?"t":"n"}">${esc(j.job_type)}</span></div>
- <div class="snip">${esc(j.snippet)}…</div></div>`).join("");
+ <div class="snip">${esc(clean(j.snippet))}</div></div>`).join("");
  $("more").hidden=F.length<=shown}
 fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{ALL=d.jobs;const m=d.meta;
  $("meta").textContent=`${m.count} live posts from ${m.boards} company career boards · last refreshed ${new Date(m.updated_at).toLocaleString()} · refreshes daily`;
