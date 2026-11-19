@@ -10,7 +10,7 @@
   "fresher_candidates": 10
  },
  "greenhouse/okta": {
-  "total": 365,
+  "total": 366,
   "india": 105,
   "fresher_candidates": 8
  },
@@ -225,7 +225,7 @@
   "fresher_candidates": 0
  },
  "greenhouse/kaseya": {
-  "total": 95,
+  "total": 97,
   "india": 24,
   "fresher_candidates": 7
  },
