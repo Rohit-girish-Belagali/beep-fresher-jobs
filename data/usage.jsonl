@@ -50,3 +50,6 @@
 {"ts": 1794923156.501608, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 5077, "out": 712, "cost": 0.0008637}
 {"ts": 1794923159.781892, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 4621, "out": 740, "cost": 0.0008321}
 {"ts": 1794923163.4809432, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 4070, "out": 705, "cost": 0.0007595}
+{"ts": 1795108033.1166012, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 5315, "out": 713, "cost": 0.000888}
+{"ts": 1795108036.0216036, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 4604, "out": 698, "cost": 0.0008094}
+{"ts": 1795108039.0522687, "model": "anthropic/claude-haiku-5.5", "posts": 8, "in": 5377, "out": 696, "cost": 0.0008857}
