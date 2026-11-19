@@ -49,7 +49,7 @@ Each user message holds 8 posts rendered as `### id=... / title / company / loca
 - Strict title/experience filter gave only ~116 candidates -> widened pre-filter, let the LLM decide.
 - SmartRecruiters detail calls were slow -> fetch detail only for non-senior titles.
 - Greenhouse descriptions are double-escaped HTML -> unescape twice before stripping.
-- Same job listed per location/requisition -> fuzzy dedupe (84-110 dropped).
+- Same job listed per location/requisition -> added fuzzy dedupe. Latest run: 114 duplicates dropped (109 exact, 5 fuzzy), see data/dedupe_log.json.
 
 ## 6. Key design decisions I made
 
