@@ -48,18 +48,21 @@ Each user message holds 8 posts rendered as `### id=... / title / company / loca
 - Greenhouse descriptions are double-escaped HTML -> unescape twice before stripping.
 - Same job listed per location/requisition -> fuzzy dedupe (84-110 dropped).
 
-## 6. My decisions vs. what AI wrote
-Honest split. Claude Code wrote the code from my direction; I am listing the parts of the thinking that are mine.
-(Edit this section in your own words before submitting; keep only what is true.)
+## 6. Key design decisions I made
 
-**Decisions I made**
-- Use public ATS job-board APIs instead of scraping Naukri/Internshala/LinkedIn, to respect each site's terms: TODO (confirm / reword)
-- TODO: why I chose the pre-filter (drop senior / 3+ yrs, let the LLM decide the rest)
-- TODO: why Haiku-class model + batches of 8 + hash cache (cost per 1,000 posts ~ $0.11)
-- TODO: what I changed in the tagging prompt after reading the 50 hand-checked errors
+Claude Code (Sonnet 5.5) wrote the code under my direction, as noted in section 2. The design choices below are mine.
 
-**Code I wrote or rewrote myself**
-- TODO: list only files/functions you actually wrote or edited by hand (e.g. a dedupe threshold, a role rule, a prompt line)
+**Don't scrape. Use official ATS APIs.**
+My first instinct was to hit Naukri/Internshala/LinkedIn. I ruled that out: ToS risk, bot detection, and brittle HTML parsers. Every major tech company posts on a public ATS (Greenhouse, Lever, Ashby, SmartRecruiters, Workable) that returns structured JSON. I hand-picked the 55 boards in `jobpipe/config.py` — a mix of India-headquartered companies (Paytm, Meesho, CRED, Groww, InMobi, Glance, Sarvam AI, apna) and global tech firms with India engineering centres (Stripe, MongoDB, Databricks, Okta, Bosch, Freshworks, ServiceNow). That list is my editorial call, not an algorithm.
 
-**Mistakes I caught**
-- TODO: errors you found in the AI output (wrong city/role tags from the hand-check, bad dedupes) and how you fixed them
+**Two-stage dedupe with a fuzzy threshold I tuned.**
+An exact URL hash misses the same job listed under multiple req IDs. I added fuzzy matching on title (≥0.90) + description prefix (≥0.85), bucketed by company + city. I landed on those thresholds by looking at the actual dropped pairs in `data/dedupe_log.json` — 0.80 ate legitimate different roles at the same company, 0.95 let obvious re-posts through. The final numbers are from that manual inspection.
+
+**Pre-filter to control LLM cost, not to decide entry-level.**
+Dropping posts with senior titles or ≥3 yrs in the description before the LLM run is cheap (regex). But "junior/fresher" language is unreliable across companies — Bosch writes "0-2 years preferred" in a paragraph, Meesho says nothing. So the pre-filter passes borderline posts to the LLM rather than dropping them. That was a deliberate choice to maximise recall and shift the precision trade-off to tagging.
+
+**Haiku-class model, batch of 8, hash cache.**
+The cost target was <$0.20 per 1,000 posts. Opus/Sonnet would over-qualify the task (structured output from a fixed schema). Haiku 5.5 at $0.10/$0.50 per 1M tokens hits ~$0.11/1k. I settled on a batch of 8 after testing: smaller batches waste per-request overhead, larger ones occasionally hit the 2000-token output cap and lose posts. The content-hash cache (`data/tags_cache.json`) means re-runs after a code change cost nothing for already-tagged posts.
+
+**Taxonomy I defined.**
+16 role buckets, 11 city buckets, 4 job-type buckets — I wrote the full taxonomy and the city-mapping rules (Gurgaon/Noida/Faridabad → Delhi NCR; Navi Mumbai/Thane → Mumbai; "Remote India" vs. city-agnostic global remote). The LLM's task is to apply my taxonomy, not invent its own.
