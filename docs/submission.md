@@ -47,3 +47,19 @@ Each user message holds 8 posts rendered as `### id=... / title / company / loca
 - SmartRecruiters detail calls were slow -> fetch detail only for non-senior titles.
 - Greenhouse descriptions are double-escaped HTML -> unescape twice before stripping.
 - Same job listed per location/requisition -> fuzzy dedupe (84-110 dropped).
+
+## 6. My decisions vs. what AI wrote
+Honest split. Claude Code wrote the code from my direction; I am listing the parts of the thinking that are mine.
+(Edit this section in your own words before submitting; keep only what is true.)
+
+**Decisions I made**
+- Use public ATS job-board APIs instead of scraping Naukri/Internshala/LinkedIn, to respect each site's terms: TODO (confirm / reword)
+- TODO: why I chose the pre-filter (drop senior / 3+ yrs, let the LLM decide the rest)
+- TODO: why Haiku-class model + batches of 8 + hash cache (cost per 1,000 posts ~ $0.11)
+- TODO: what I changed in the tagging prompt after reading the 50 hand-checked errors
+
+**Code I wrote or rewrote myself**
+- TODO: list only files/functions you actually wrote or edited by hand (e.g. a dedupe threshold, a role rule, a prompt line)
+
+**Mistakes I caught**
+- TODO: errors you found in the AI output (wrong city/role tags from the hand-check, bad dedupes) and how you fixed them
