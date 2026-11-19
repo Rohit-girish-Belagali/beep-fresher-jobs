@@ -1,9 +1,9 @@
 # Submission working doc
 
 ## 1. Data
-- `docs/jobs_data.csv`: all 225 published posts (title, company, city, role, job type, source, apply URL).
+- `jobs_data.csv`: snapshot of 225 published posts from the first full LLM run (title, company, city, role, job type, source, apply URL). The live site refreshes daily and shows 210 posts after the 2026-11-19 refresh.
 - `data/eval_sheet.csv`: 50 seeded-random posts for the hand-check (verdicts filled; see section 4).
-- Sources: public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Workable), 55 company boards. No scraping of job portals.
+- Sources: public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Workable), 63 company boards (the 63 are listed in `jobpipe/config.py`). No scraping of job portals.
 
 ## 2. AI tools used
 - Claude Code (Claude Sonnet 5.5): wrote the pipeline code, under my direction.

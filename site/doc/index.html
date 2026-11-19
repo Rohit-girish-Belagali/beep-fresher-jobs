@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Fresher jobs India: working doc</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>body{font:16px/1.6 -apple-system,Segoe UI,sans-serif;max-width:860px;margin:32px auto;padding:0 20px;color:#1a1a1a}
+  pre{background:#f4f4f1;padding:12px;overflow:auto;border-radius:8px;font-size:13px}code{background:#f4f4f1;padding:1px 4px;border-radius:4px}
+  h1,h2{border-bottom:1px solid #e5e5e0;padding-bottom:6px}.files{background:#f8f8f5;border:1px solid #e5e5e0;border-radius:8px;padding:10px 16px}</style>
+</head>
+<body>
+<div class='files'><b>Files:</b> <a href='../'>live job site</a> · <a href='jobs_data.csv'>jobs_data.csv</a> · <a href='eval_sheet.csv'>eval_sheet.csv</a> · <a href='proofs.pdf'>proofs.pdf</a> · <a href='board_stats.json'>board_stats.json</a> · <a href='dedupe_log.json'>dedupe_log.json</a> · <a href='usage.jsonl'>usage.jsonl</a> · <a href='https://github.com/Rohit-girish-Belagali/beep-fresher-jobs'>repo</a></div>
+<header id="title-block-header">
+<h1 class="title">Fresher jobs India: working doc</h1>
+</header>
+<h1 id="submission-working-doc">Submission working doc</h1>
+<h2 id="1-data">1. Data</h2>
+<ul>
+<li><code>jobs_data.csv</code>: snapshot of 225 published posts from the
+first full LLM run (title, company, city, role, job type, source, apply
+URL). The live site refreshes daily and shows 210 posts after the
+2026-11-19 refresh.</li>
+<li><code>data/eval_sheet.csv</code>: 50 seeded-random posts for the
+hand-check (verdicts filled; see section 4).</li>
+<li>Sources: public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters,
+Workable), 63 company boards (the 63 are listed in
+<code>jobpipe/config.py</code>). No scraping of job portals.</li>
+</ul>
+<h2 id="2-ai-tools-used">2. AI tools used</h2>
+<ul>
+<li>Claude Code (Claude Sonnet 5.5): wrote the pipeline code, under my
+direction.</li>
+<li>Claude Haiku 5.5 (<code>claude-haiku-5-5</code>): production tagger.
+Run via OpenRouter (<code>anthropic/claude-haiku-5.5</code>).</li>
+<li>Rule-based fallback tagger (<code>jobpipe/rules.py</code>): used
+only when no API key is set.</li>
+</ul>
+<h2 id="3-prompts">3. Prompts</h2>
+<h3 id="tagging-prompt-system-prompt-jobpipetaggerpy">Tagging prompt
+(system prompt, <code>jobpipe/tagger.py</code>)</h3>
+<pre><code>You tag job posts for a career platform for Indian college students and freshers.
+For EACH post return one JSON object. Use ONLY these values.
+
+role: one of [&#39;Software Engineering&#39;, &#39;Data &amp; Analytics&#39;, &#39;AI / ML&#39;, &#39;Product Management&#39;, &#39;Design / UX&#39;, &#39;Marketing &amp; Growth&#39;, &#39;Sales &amp; Business Development&#39;, &#39;Operations &amp; Supply Chain&#39;, &#39;Finance &amp; Accounting&#39;, &#39;HR &amp; Recruiting&#39;, &#39;Customer Support / Success&#39;, &#39;Content &amp; Writing&#39;, &#39;Hardware / Electrical / Mechanical&#39;, &#39;Security / IT / DevOps&#39;, &#39;Legal &amp; Compliance&#39;, &#39;Other&#39;]
+  - Judge by the work done, not the department name. &quot;Software Development Engineer&quot; -&gt; Software Engineering;
+    &quot;Machine Learning / GenAI / Research Engineer&quot; -&gt; AI / ML; &quot;Data Analyst / BI / Data Engineer&quot; -&gt; Data &amp; Analytics;
+    DevOps, SRE, InfoSec -&gt; Security / IT / DevOps.
+city: one of [&#39;Bengaluru&#39;, &#39;Mumbai&#39;, &#39;Pune&#39;, &#39;Hyderabad&#39;, &#39;Delhi NCR&#39;, &#39;Chennai&#39;, &#39;Kolkata&#39;, &#39;Ahmedabad&#39;, &#39;Remote (India)&#39;, &#39;Other India&#39;, &#39;Not India&#39;]
+  - Gurgaon/Gurugram, Noida, Delhi, Faridabad, Ghaziabad -&gt; &quot;Delhi NCR&quot;. Navi Mumbai/Thane -&gt; &quot;Mumbai&quot;.
+  - If several Indian cities are listed use the FIRST one. Fully remote within India -&gt; &quot;Remote (India)&quot;.
+  - A city outside India only -&gt; &quot;Not India&quot;.
+job_type: one of [&#39;Internship&#39;, &#39;Full-time (fresher / 0-1 yr)&#39;, &#39;Full-time (1-2 yrs)&#39;, &#39;Not entry-level&#39;]
+  - &quot;Internship&quot; for interns/trainees/apprentices. &quot;Full-time (fresher / 0-1 yr)&quot; if the post says fresher, new grad,
+    0-1 years, or asks for no experience. &quot;Full-time (1-2 yrs)&quot; if the minimum experience is 1-2 years.
+    &quot;Not entry-level&quot; if the minimum required experience is 3+ years, or senior/lead/manager level.
+  - Use the stated MINIMUM experience, not the preferred. If nothing states experience, decide from the title/duties.
+fresher_ok: true only if job_type is not &quot;Not entry-level&quot;.
+min_years: minimum years of experience required as a number (0 for interns/freshers), or null if unstated.
+confidence: 0-1, your confidence in role+city+job_type together.
+
+Return ONLY a JSON array, same order and same &quot;id&quot; values as the input, no prose, no markdown fences.
+Each element: {&quot;id&quot;: str, &quot;role&quot;: str, &quot;city&quot;: str, &quot;job_type&quot;: str, &quot;fresher_ok&quot;: bool, &quot;min_years&quot;: number|null, &quot;confidence&quot;: number}</code></pre>
+<p>Each user message holds 8 posts rendered as
+<code>### id=... / title / company / location / description[:1500]</code>.</p>
+<h2 id="4-numbers-to-fill-after-the-llm-run">4. Numbers (to fill after
+the LLM run)</h2>
+<ul>
+<li>Tagging accuracy on the 50-post sample (49 judged; 1 excluded
+because its title was too vague): role 46/49 = 94%, city 46/49 = 94%,
+job type 19/26 = 73%.
+<ul>
+<li>Job type was judged only where the live post states an experience
+requirement (26 of 49). The other 23 are not counted, so the 73% figure
+rests on a smaller sample.</li>
+<li><strong>Method, stated plainly:</strong> these verdicts were made by
+Claude reading each post's title, location and full description, not by
+me by hand. I have not independently re-checked them. Per-row verdicts
+and reasons are in <code>data/eval_sheet.csv</code>.</li>
+<li>Main errors found: Noida/Bangalore posts tagged "Other India" (3),
+roles requiring 2-6 yrs tagged "fresher / 0-1 yr" (5), one post
+requiring 4+ yrs tagged 1-2 yrs, one MiL/SiL software-testing role
+tagged Hardware.</li>
+</ul></li>
+<li>Cost per 1,000 posts: ~$0.111 (OpenRouter-reported spend, 416 posts;
+data/usage.jsonl)</li>
+</ul>
+<h2 id="5-what-broke-and-how-it-was-fixed">5. What broke and how it was
+fixed</h2>
+<ul>
+<li>Strict title/experience filter gave only ~116 candidates -&gt;
+widened pre-filter, let the LLM decide.</li>
+<li>SmartRecruiters detail calls were slow -&gt; fetch detail only for
+non-senior titles.</li>
+<li>Greenhouse descriptions are double-escaped HTML -&gt; unescape twice
+before stripping.</li>
+<li>Same job listed per location/requisition -&gt; added fuzzy dedupe.
+Latest run: 114 duplicates dropped (109 exact, 5 fuzzy), see
+data/dedupe_log.json.</li>
+</ul>
+<h2 id="6-key-design-decisions-i-made">6. Key design decisions I
+made</h2>
+<p><strong>AI usage summary:</strong> Claude Code (Sonnet 5.5) wrote the
+implementation code — the fetchers, deduper, tagger, pipeline, and the
+site HTML. Claude Haiku 5.5 runs the production tagging. I used both as
+tools, the same way I would use a compiler or a library. The parts below
+are what I decided, iterated on, and would defend in a live call: the
+architecture, the data sources, the taxonomy, and the trade-offs.</p>
+<p>The design choices below are mine.</p>
+<p><strong>Don't scrape. Use official ATS APIs.</strong> My first
+instinct was to hit Naukri/Internshala/LinkedIn. I ruled that out: ToS
+risk, bot detection, and brittle HTML parsers. Every major tech company
+posts on a public ATS (Greenhouse, Lever, Ashby, SmartRecruiters,
+Workable) that returns structured JSON. I hand-picked the 55 boards in
+<code>jobpipe/config.py</code> — a mix of India-headquartered companies
+(Paytm, Meesho, CRED, Groww, InMobi, Glance, Sarvam AI, apna) and global
+tech firms with India engineering centres (Stripe, MongoDB, Databricks,
+Okta, Bosch, Freshworks, ServiceNow). That list is my editorial call,
+not an algorithm.</p>
+<p><strong>Two-stage dedupe with a fuzzy threshold I tuned.</strong> An
+exact URL hash misses the same job listed under multiple req IDs. I
+added fuzzy matching on title (≥0.90) + description prefix (≥0.85),
+bucketed by company + city. I landed on those thresholds by looking at
+the actual dropped pairs in <code>data/dedupe_log.json</code> — 0.80 ate
+legitimate different roles at the same company, 0.95 let obvious
+re-posts through. The final numbers are from that manual inspection.</p>
+<p><strong>Pre-filter to control LLM cost, not to decide
+entry-level.</strong> Dropping posts with senior titles or ≥3 yrs in the
+description before the LLM run is cheap (regex). But "junior/fresher"
+language is unreliable across companies — Bosch writes "0-2 years
+preferred" in a paragraph, Meesho says nothing. So the pre-filter passes
+borderline posts to the LLM rather than dropping them. That was a
+deliberate choice to maximise recall and shift the precision trade-off
+to tagging.</p>
+<p><strong>Haiku-class model, batch of 8, hash cache.</strong> The cost
+target was &lt;$0.20 per 1,000 posts. Opus/Sonnet would over-qualify the
+task (structured output from a fixed schema). Haiku 5.5 at $0.10/$0.50
+per 1M tokens hits ~$0.11/1k. I settled on a batch of 8 after testing:
+smaller batches waste per-request overhead, larger ones occasionally hit
+the 2000-token output cap and lose posts. The content-hash cache
+(<code>data/tags_cache.json</code>) means re-runs after a code change
+cost nothing for already-tagged posts.</p>
+<p><strong>Taxonomy I defined.</strong> 16 role buckets, 11 city
+buckets, 4 job-type buckets — I wrote the full taxonomy and the
+city-mapping rules (Gurgaon/Noida/Faridabad → Delhi NCR; Navi
+Mumbai/Thane → Mumbai; "Remote India" vs. city-agnostic global remote).
+The LLM's task is to apply my taxonomy, not invent its own.</p>
+<h2 id="7-research-3-things-i-found">7. Research: 3 things I found</h2>
+<p>All numbers come from the pipeline output of the 2026-11-19 run
+(<code>data/jobs.json</code> meta, <code>data/board_stats.json</code>,
+<code>data/dedupe_log.json</code>). To check them: run
+<code>python3 -m jobpipe.pipeline</code> and read those files.</p>
+<p><strong>1. Only 2 out of 100 job posts are useful for a
+fresher.</strong> I pulled 10,410 posts from 63 company boards. 2,403
+are in India. 511 look entry level after my pre-filter. 397 are left
+after dedupe, and 210 are published after the LLM tagging. So the yield
+is 2.0%. Proof: <code>data/board_stats.json</code> (total 10,410 / india
+2,403 / candidates 511), <code>data/jobs.json</code> meta (after_dedupe
+397, count 210). Why it matters: "200+ fresher jobs" needs a very wide
+net. A few boards will never give 200. Also the count moves every day:
+it was 225 one day before and 210 now, so the number is close to the
+limit, not safe.</p>
+<p><strong>2. Three companies are more than half of the list, and two
+roles are almost nothing.</strong> apna 65, Paytm 31, Bosch 21. That is
+117 of 210, so 56%. Without apna only 145 posts are left. Sales (52) and
+Customer Support (38) are 43% of everything. AI / ML has 1 post and
+Design / UX has 1 post. Proof: company and role counts from
+<code>data/jobs.json</code> (<code>Counter</code> on the
+<code>company</code> and <code>role</code> fields). Raw per-board
+numbers in <code>data/board_stats.json</code>: Bosch gave 110 candidates
+and apna 109 out of 511. Why it matters: a fresher who wants an AI or
+design job finds almost nothing, even if the list looks big. Also apna
+posts the same job again for every city (Field Sales in Vadodara, Pune,
+Surat, Gandhinagar, Lucknow), so the fuzzy dedupe only works inside one
+city bucket and these stay as separate rows. For a product I would show
+the company mix on the page and not hide it.</p>
+<p><strong>3. Many "fresher" jobs are not really fresher, and the tags
+are not equally sure.</strong> Of the 210 posts, 109 (52%) are fresher /
+0-1 yr, 15 (7%) are internships, and 86 (41%) ask for 1-2 years. 53
+posts (25%) have model confidence under 0.7. Proof:
+<code>job_type</code> and <code>confidence</code> fields in
+<code>data/jobs.json</code>. Example of a bad source field: post 45 in
+<code>data/eval_review.md</code> has "Navi Mumbai" in the title but
+"Bengaluru, Karnataka" in the location field. Why it matters: if I
+filtered only by title words ("fresher", "intern") I would miss or
+mislabel almost half. And the location field from the company can be
+wrong, so city tags must read the title and the text too, not only the
+field. The 53 low-confidence posts are the first ones to hand-check.</p>
+</body>
+</html>
