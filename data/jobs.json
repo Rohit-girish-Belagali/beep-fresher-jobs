@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated_at": "2026-11-19T20:19:16Z",
+  "updated_at": "2026-11-19T20:26:38Z",
   "count": 209,
   "fetched": 511,
   "after_dedupe": 396,
@@ -14,6 +14,22 @@
   }
  },
  "jobs": [
+  {
+   "id": "d3e5af87ec77e80a",
+   "title": "Account Development Representative",
+   "company": "MongoDB",
+   "location": "Bengaluru",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318466",
+   "source": "greenhouse",
+   "role": "Sales & Business Development",
+   "city": "Bengaluru",
+   "job_type": "Full-time (fresher / 0-1 yr)",
+   "min_years": 0,
+   "confidence": 0.9,
+   "posted_at": "2026-07-22T09:12:25-04:00",
+   "first_seen": "2026-11-19T20:26:38Z",
+   "snippet": "An Account Development Representative at MongoDB is the starting point for building a serious career in technology sales.\u00a0\n This role is the foundation of our sales organization. You will partner closely with Account Executives to identify new opportunities within strategic accou"
+  },
   {
    "id": "df6d184560614e50",
    "title": "IT System Administrator I",
@@ -141,22 +157,6 @@
    "posted_at": "2026-06-04T15:06:31.440+00:00",
    "first_seen": "2026-11-19T17:03:37Z",
    "snippet": "WHO WE ARE\nAtlan is building the context layer for enterprise AI. Enterprises are pouring money into AI and most of it dies in production because the AI does not understand the business context around the data. That is the problem Atlan solves.\nGartner has named context the defin"
-  },
-  {
-   "id": "aaa8f93d77ded32d",
-   "title": "Account Development Representative",
-   "company": "MongoDB",
-   "location": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318558",
-   "source": "greenhouse",
-   "role": "Sales & Business Development",
-   "city": "Delhi NCR",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.9,
-   "posted_at": "2026-07-27T07:46:53-04:00",
-   "first_seen": "2026-11-17T13:40:49Z",
-   "snippet": "An Account Development Representative at MongoDB is the starting point for building a serious career in technology sales.\u00a0\n This role is the foundation of our sales organization. You will partner closely with Account Executives to identify new opportunities within strategic accou"
   },
   {
    "id": "152d4d58ac14bf53",
@@ -2179,14 +2179,14 @@
    "title": "Phone Number specialist 1",
    "company": "Twilio",
    "location": "Remote - India",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8346263",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8334053",
    "source": "greenhouse",
    "role": "Customer Support / Success",
    "city": "Remote (India)",
    "job_type": "Full-time (fresher / 0-1 yr)",
    "min_years": 0,
    "confidence": 0.8,
-   "posted_at": "2026-11-05T10:03:53-05:00",
+   "posted_at": "2026-11-05T10:01:06-05:00",
    "first_seen": "2026-11-15T19:40:51Z",
    "snippet": "Who we are\u00a0 \n At Twilio, we\u2019re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to \u00a0hundreds of thousands of businesses\u00a0 and empower millions of developers worldwide to craft personalized customer experiences.\n Our dedicatio"
   },
