@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-19T17:03:37Z",
-  "count": 210,
+  "updated_at": "2026-11-19T20:19:16Z",
+  "count": 209,
   "fetched": 511,
-  "after_dedupe": 397,
+  "after_dedupe": 396,
   "boards": 63,
   "cost": {
    "posts": 440,
@@ -751,22 +751,6 @@
    "snippet": "Bosch Global Software Technologies Private Limited is a 100% owned subsidiary of Robert Bosch GmbH, one of the world's leading global supplier of technology and services, offering end-to-end Engineering, IT and Business Solutions. With over 28,200+ associates, it\u2019s the largest so"
   },
   {
-   "id": "17b61042b30d1786",
-   "title": "Business Development Representative",
-   "company": "ServiceNow",
-   "location": "Bangalore, IN",
-   "url": "https://jobs.smartrecruiters.com/ServiceNow/744000161932469",
-   "source": "smartrecruiters",
-   "role": "Sales & Business Development",
-   "city": "Bengaluru",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.9,
-   "posted_at": "2026-11-16T23:16:22.748Z",
-   "first_seen": "2026-11-17T12:13:07Z",
-   "snippet": "It all started in sunny San Diego, California in 2004 when a visionary engineer, Fred Luddy, saw the potential to transform how we work. Fast forward to today \u2014 ServiceNow stands as a global market leader, bringing innovative AI-enhanced technology to over 8,100 customers, includ"
-  },
-  {
    "id": "e20750ec33936c5a",
    "title": "Research Analyst",
    "company": "NielsenIQ",
@@ -1107,14 +1091,14 @@
    "title": "ServiceNow Platform Support",
    "company": "Pure Storage",
    "location": "Bangalore, India",
-   "url": "https://job-boards.greenhouse.io/purestorage/jobs/8330275",
+   "url": "https://job-boards.greenhouse.io/purestorage/jobs/8330285",
    "source": "greenhouse",
    "role": "Security / IT / DevOps",
    "city": "Bengaluru",
    "job_type": "Full-time (1-2 yrs)",
    "min_years": null,
    "confidence": 0.6,
-   "posted_at": "2026-11-03T23:38:36-05:00",
+   "posted_at": "2026-11-03T23:38:21-05:00",
    "first_seen": "2026-11-17T12:04:04Z",
    "snippet": "Everpure (NYSE: P) has evolved from storage pioneer to data platform, closing fiscal 2026 with $3.7 billion in revenue, its first billion-dollar quarter, and accelerating growth into FY27. Our strategic agenda spans the companies defining the next era of technology - hyperscalers"
   },
