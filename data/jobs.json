@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-21T07:37:29Z",
-  "count": 201,
-  "fetched": 504,
-  "after_dedupe": 396,
+  "updated_at": "2026-11-22T07:19:28Z",
+  "count": 199,
+  "fetched": 502,
+  "after_dedupe": 394,
   "boards": 63,
   "cost": {
    "posts": 440,
@@ -2223,22 +2223,6 @@
    "snippet": "Job Title: HR Onboarding Intern\nPositions (MBA / Graduate) Location: Noida\u00a0\nMode: Work from Office (5 days a week)\u00a0\nDuration: 3 Months\u00a0\nAbout Us:\u00a0\nPaytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in"
   },
   {
-   "id": "25cb9beb1f802654",
-   "title": "Intern-Talent Acquisition",
-   "company": "Paytm",
-   "location": "Bangalore, Karnataka",
-   "url": "https://jobs.lever.co/paytm/9d497980-2032-440c-8bac-63fb53938acc",
-   "source": "lever",
-   "role": "HR & Recruiting",
-   "city": "Bengaluru",
-   "job_type": "Internship",
-   "min_years": 0,
-   "confidence": 0.95,
-   "posted_at": "2026-05-01T10:03:45.082000",
-   "first_seen": "2026-11-15T19:40:51Z",
-   "snippet": "About Us: \u00a0\nPaytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Ind"
-  },
-  {
    "id": "dc4290167a660c24",
    "title": "Lending Operations - AM - Merchant Lending",
    "company": "Paytm",
@@ -2557,22 +2541,6 @@
    "posted_at": "2026-11-12T04:03:11.248Z",
    "first_seen": "2026-11-15T19:40:51Z",
    "snippet": "Experian is a global data and technology company, powering opportunities for people and businesses around the world. We operate across a range of markets, from financial services to healthcare, automotive, agribusiness, insurance, and many more. Experian invests in people and new"
-  },
-  {
-   "id": "9a3de37288c0c185",
-   "title": "Jr. Customer Support Analyst",
-   "company": "NielsenIQ",
-   "location": "Pune, IN",
-   "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000161270965",
-   "source": "smartrecruiters",
-   "role": "Customer Support / Success",
-   "city": "Pune",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": null,
-   "confidence": 0.8,
-   "posted_at": "2026-11-12T10:57:55.086Z",
-   "first_seen": "2026-11-15T19:40:51Z",
-   "snippet": "Jr. Customer Support\u00a0Analyst will be responsible for maintaining/ enhancing customer relationships, ensuring customer deliverables and queries are turned around efficiently using the proprietary NielsenIQ platforms. The job will focus on customer support through quality of delive"
   },
   {
    "id": "5cb24bc7edda03f2",
