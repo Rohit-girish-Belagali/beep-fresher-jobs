@@ -5,13 +5,13 @@
   "fresher_candidates": 12
  },
  "greenhouse/mongodb": {
-  "total": 421,
+  "total": 419,
   "india": 70,
   "fresher_candidates": 10
  },
  "greenhouse/okta": {
-  "total": 372,
-  "india": 105,
+  "total": 371,
+  "india": 104,
   "fresher_candidates": 8
  },
  "greenhouse/databricks": {
@@ -20,42 +20,42 @@
   "fresher_candidates": 3
  },
  "greenhouse/zscaler": {
-  "total": 389,
+  "total": 394,
   "india": 100,
   "fresher_candidates": 9
  },
  "greenhouse/rubrik": {
-  "total": 220,
-  "india": 44,
+  "total": 226,
+  "india": 45,
   "fresher_candidates": 12
  },
  "greenhouse/elastic": {
-  "total": 384,
-  "india": 15,
+  "total": 390,
+  "india": 16,
   "fresher_candidates": 4
  },
  "greenhouse/datadog": {
-  "total": 383,
+  "total": 388,
   "india": 8,
   "fresher_candidates": 4
  },
  "greenhouse/groww": {
-  "total": 7,
-  "india": 7,
+  "total": 8,
+  "india": 8,
   "fresher_candidates": 3
  },
  "greenhouse/toast": {
-  "total": 312,
-  "india": 24,
-  "fresher_candidates": 2
- },
- "greenhouse/sumologic": {
-  "total": 26,
-  "india": 12,
+  "total": 299,
+  "india": 22,
   "fresher_candidates": 1
  },
+ "greenhouse/sumologic": {
+  "total": 27,
+  "india": 11,
+  "fresher_candidates": 0
+ },
  "greenhouse/workato": {
-  "total": 53,
+  "total": 54,
   "india": 0,
   "fresher_candidates": 0
  },
@@ -65,47 +65,47 @@
   "fresher_candidates": 0
  },
  "greenhouse/druva": {
-  "total": 26,
+  "total": 25,
   "india": 10,
   "fresher_candidates": 1
  },
  "greenhouse/twilio": {
-  "total": 116,
-  "india": 15,
-  "fresher_candidates": 4
+  "total": 113,
+  "india": 14,
+  "fresher_candidates": 3
  },
  "greenhouse/coinbase": {
-  "total": 249,
+  "total": 246,
   "india": 9,
   "fresher_candidates": 1
  },
  "greenhouse/airbnb": {
-  "total": 199,
+  "total": 200,
   "india": 10,
   "fresher_candidates": 1
  },
  "greenhouse/gitlab": {
-  "total": 251,
+  "total": 249,
   "india": 31,
-  "fresher_candidates": 8
+  "fresher_candidates": 9
  },
  "greenhouse/netskope": {
-  "total": 122,
-  "india": 19,
+  "total": 126,
+  "india": 20,
   "fresher_candidates": 0
  },
  "greenhouse/appsflyer": {
-  "total": 56,
+  "total": 54,
   "india": 4,
   "fresher_candidates": 1
  },
  "greenhouse/mixpanel": {
-  "total": 38,
+  "total": 41,
   "india": 4,
   "fresher_candidates": 0
  },
  "greenhouse/samsara": {
-  "total": 292,
+  "total": 289,
   "india": 4,
   "fresher_candidates": 1
  },
@@ -115,39 +115,39 @@
   "fresher_candidates": 1
  },
  "greenhouse/fivetran": {
-  "total": 206,
-  "india": 22,
+  "total": 209,
+  "india": 23,
   "fresher_candidates": 2
  },
  "greenhouse/newrelic": {
-  "total": 44,
-  "india": 5,
+  "total": 42,
+  "india": 3,
   "fresher_candidates": 0
  },
  "greenhouse/inmobi": {
-  "total": 66,
-  "india": 39,
-  "fresher_candidates": 2
+  "total": 67,
+  "india": 41,
+  "fresher_candidates": 3
  },
  "greenhouse/glance": {
-  "total": 25,
-  "india": 13,
+  "total": 22,
+  "india": 11,
   "fresher_candidates": 1
  },
  "greenhouse/purestorage": {
-  "total": 395,
-  "india": 62,
+  "total": 390,
+  "india": 60,
   "fresher_candidates": 9
  },
  "greenhouse/anthropic": {
-  "total": 630,
-  "india": 6,
+  "total": 636,
+  "india": 7,
   "fresher_candidates": 1
  },
  "lever/paytm": {
-  "total": 189,
-  "india": 166,
-  "fresher_candidates": 41
+  "total": 190,
+  "india": 167,
+  "fresher_candidates": 42
  },
  "lever/meesho": {
   "total": 48,
@@ -160,9 +160,9 @@
   "fresher_candidates": 4
  },
  "lever/zeta": {
-  "total": 33,
-  "india": 29,
-  "fresher_candidates": 8
+  "total": 34,
+  "india": 30,
+  "fresher_candidates": 9
  },
  "lever/mindtickle": {
   "total": 20,
@@ -170,8 +170,8 @@
   "fresher_candidates": 3
  },
  "ashby/sarvam": {
-  "total": 40,
-  "india": 40,
+  "total": 39,
+  "india": 39,
   "fresher_candidates": 11
  },
  "ashby/atlan": {
@@ -181,17 +181,17 @@
  },
  "smartrecruiters/BoschGroup": {
   "total": 600,
-  "india": 529,
-  "fresher_candidates": 100
+  "india": 527,
+  "fresher_candidates": 98
  },
  "smartrecruiters/ServiceNow": {
-  "total": 83,
-  "india": 83,
-  "fresher_candidates": 9
+  "total": 81,
+  "india": 81,
+  "fresher_candidates": 8
  },
  "smartrecruiters/Experian": {
-  "total": 43,
-  "india": 43,
+  "total": 44,
+  "india": 44,
   "fresher_candidates": 5
  },
  "smartrecruiters/Freshworks": {
@@ -200,13 +200,13 @@
   "fresher_candidates": 0
  },
  "smartrecruiters/NielsenIQ": {
-  "total": 80,
-  "india": 78,
-  "fresher_candidates": 28
+  "total": 86,
+  "india": 84,
+  "fresher_candidates": 30
  },
  "smartrecruiters/AbbVie": {
-  "total": 40,
-  "india": 32,
+  "total": 42,
+  "india": 33,
   "fresher_candidates": 8
  },
  "workable/apna": {
@@ -215,14 +215,14 @@
   "fresher_candidates": 109
  },
  "greenhouse/agoda": {
-  "total": 337,
-  "india": 12,
-  "fresher_candidates": 2
+  "total": 338,
+  "india": 14,
+  "fresher_candidates": 3
  },
  "greenhouse/fastly": {
   "total": 50,
-  "india": 2,
-  "fresher_candidates": 0
+  "india": 3,
+  "fresher_candidates": 1
  },
  "greenhouse/kaseya": {
   "total": 92,
@@ -230,17 +230,17 @@
   "fresher_candidates": 7
  },
  "greenhouse/logicmonitor": {
-  "total": 42,
+  "total": 41,
   "india": 9,
   "fresher_candidates": 2
  },
  "greenhouse/yext": {
-  "total": 32,
+  "total": 34,
   "india": 4,
   "fresher_candidates": 2
  },
  "greenhouse/zoominfo": {
-  "total": 93,
+  "total": 92,
   "india": 15,
   "fresher_candidates": 3
  },
@@ -260,13 +260,13 @@
   "fresher_candidates": 1
  },
  "greenhouse/jfrog": {
-  "total": 78,
+  "total": 80,
   "india": 6,
   "fresher_candidates": 2
  },
  "greenhouse/onetrust": {
-  "total": 84,
-  "india": 19,
+  "total": 75,
+  "india": 17,
   "fresher_candidates": 2
  },
  "greenhouse/singlestore": {
@@ -275,13 +275,13 @@
   "fresher_candidates": 0
  },
  "greenhouse/payoneer": {
-  "total": 100,
-  "india": 32,
-  "fresher_candidates": 7
+  "total": 95,
+  "india": 30,
+  "fresher_candidates": 6
  },
  "greenhouse/smartsheet": {
-  "total": 78,
-  "india": 23,
+  "total": 79,
+  "india": 24,
   "fresher_candidates": 2
  },
  "greenhouse/commvault": {
@@ -290,7 +290,7 @@
   "fresher_candidates": 1
  },
  "greenhouse/zuora": {
-  "total": 43,
+  "total": 42,
   "india": 7,
   "fresher_candidates": 0
  },
@@ -305,13 +305,13 @@
   "fresher_candidates": 0
  },
  "smartrecruiters/Sutherland": {
-  "total": 53,
-  "india": 52,
-  "fresher_candidates": 16
+  "total": 51,
+  "india": 50,
+  "fresher_candidates": 15
  },
  "smartrecruiters/Endava": {
-  "total": 20,
-  "india": 20,
-  "fresher_candidates": 3
+  "total": 17,
+  "india": 17,
+  "fresher_candidates": 1
  }
 }
