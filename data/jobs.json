@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-25T09:00:32Z",
-  "count": 183,
-  "fetched": 493,
-  "after_dedupe": 391,
+  "updated_at": "2026-11-26T08:47:55Z",
+  "count": 179,
+  "fetched": 498,
+  "after_dedupe": 400,
   "boards": 63,
   "cost": {
    "posts": 440,
@@ -14,6 +14,22 @@
   }
  },
  "jobs": [
+  {
+   "id": "d3e5af87ec77e80a",
+   "title": "Account Development Representative",
+   "company": "MongoDB",
+   "location": "Bengaluru",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318466",
+   "source": "greenhouse",
+   "role": "Sales & Business Development",
+   "city": "Bengaluru",
+   "job_type": "Full-time (fresher / 0-1 yr)",
+   "min_years": 0,
+   "confidence": 0.9,
+   "posted_at": "2026-07-22T09:12:25-04:00",
+   "first_seen": "2026-11-26T08:47:55Z",
+   "snippet": "An Account Development Representative at MongoDB is the starting point for building a serious career in technology sales.\u00a0\n This role is the foundation of our sales organization. You will partner closely with Account Executives to identify new opportunities within strategic accou"
+  },
   {
    "id": "062d7e4d47bf764a",
    "title": "Analyst II - SIEM/SecOps",
@@ -495,22 +511,6 @@
    "snippet": "Job Role : Telecaller\nJob Location : Goregaon, Mumbai\nEducation : Graduation\nAbout Us:\nPaytm is India's leading mobile payments and financial services distribution company. Pioneer\nof the mobile QR payments revolution in India, Paytm builds technologies that help small\nbusinesses"
   },
   {
-   "id": "aaa8f93d77ded32d",
-   "title": "Account Development Representative",
-   "company": "MongoDB",
-   "location": "Gurugram",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318558",
-   "source": "greenhouse",
-   "role": "Sales & Business Development",
-   "city": "Delhi NCR",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.9,
-   "posted_at": "2026-07-27T07:46:53-04:00",
-   "first_seen": "2026-11-21T07:37:29Z",
-   "snippet": "An Account Development Representative at MongoDB is the starting point for building a serious career in technology sales.\u00a0\n This role is the foundation of our sales organization. You will partner closely with Account Executives to identify new opportunities within strategic accou"
-  },
-  {
    "id": "df6d184560614e50",
    "title": "IT System Administrator I",
    "company": "Rubrik",
@@ -687,22 +687,6 @@
    "snippet": "About Payoneer \n Founded in 2005, Payoneer is the global financial platform that removes friction from doing business across borders, with a mission to connect the world\u2019s underserved businesses to a rising global economy. We\u2019re a community with over 2,500 colleagues all over the"
   },
   {
-   "id": "c5308143f73914e8",
-   "title": "Customer Service Support Specialist",
-   "company": "Sutherland",
-   "location": "Hyderabad, IN",
-   "url": "https://jobs.smartrecruiters.com/Sutherland/744000159873465",
-   "source": "smartrecruiters",
-   "role": "Customer Support / Success",
-   "city": "Hyderabad",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.85,
-   "posted_at": "2026-11-05T14:01:30.523Z",
-   "first_seen": "2026-11-17T13:40:49Z",
-   "snippet": "Artificial Intelligence. Automation.Cloud engineering. Advanced analytics.For business leaders, these are key factors of success. For us, they\u2019re our core expertise.\nWe work with iconic brands worldwide. We bring them a unique value proposition through market-leading technology a"
-  },
-  {
    "id": "bc99b2c4fb325f3e",
    "title": "OS Test engineer",
    "company": "Sutherland",
@@ -763,22 +747,6 @@
    "min_years": 0,
    "confidence": 0.8,
    "posted_at": "2026-09-14T12:56:32.811Z",
-   "first_seen": "2026-11-17T13:40:49Z",
-   "snippet": "Artificial Intelligence. Automation.Cloud engineering. Advanced analytics.For business leaders, these are key factors of success. For us, they\u2019re our core expertise.\nWe work with iconic brands worldwide. We bring them a unique value proposition through market-leading technology a"
-  },
-  {
-   "id": "8c3b62b559746b2f",
-   "title": "Customer Service Support",
-   "company": "Sutherland",
-   "location": "Hyderabad, IN",
-   "url": "https://jobs.smartrecruiters.com/Sutherland/744000149318259",
-   "source": "smartrecruiters",
-   "role": "Customer Support / Success",
-   "city": "Hyderabad",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.8,
-   "posted_at": "2026-09-14T12:38:49.177Z",
    "first_seen": "2026-11-17T13:40:49Z",
    "snippet": "Artificial Intelligence. Automation.Cloud engineering. Advanced analytics.For business leaders, these are key factors of success. For us, they\u2019re our core expertise.\nWe work with iconic brands worldwide. We bring them a unique value proposition through market-leading technology a"
   },
@@ -975,6 +943,22 @@
    "snippet": "Bosch Global Software Technologies Private Limited is a 100% owned subsidiary of Robert Bosch GmbH, one of the world's leading global supplier of technology and services, offering end-to-end Engineering, IT and Business Solutions. With over 27,000+ associates, it\u2019s the largest so"
   },
   {
+   "id": "13e59370b99867af",
+   "title": "eData Governance",
+   "company": "NielsenIQ",
+   "location": "Vadodara, IN",
+   "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163807749",
+   "source": "smartrecruiters",
+   "role": "Operations & Supply Chain",
+   "city": "Other India",
+   "job_type": "Full-time (1-2 yrs)",
+   "min_years": 1,
+   "confidence": 0.5,
+   "posted_at": "2026-11-26T05:31:47.971Z",
+   "first_seen": "2026-11-17T12:13:07Z",
+   "snippet": "This role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reportin"
+  },
+  {
    "id": "e20750ec33936c5a",
    "title": "Research Analyst",
    "company": "NielsenIQ",
@@ -989,22 +973,6 @@
    "posted_at": "2026-11-16T06:07:15.099Z",
    "first_seen": "2026-11-17T12:13:07Z",
    "snippet": "As a division of NIQ, BASES is a market leader in consulting for marketers of new products.\u00a0 Major manufacturers rely on us to evaluate their new product ideas, accurately predict sales and increase the brand\u2019s potential by helping marketers make decisions at critical stages of t"
-  },
-  {
-   "id": "13e59370b99867af",
-   "title": "eData Governance",
-   "company": "NielsenIQ",
-   "location": "Vadodara, IN",
-   "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000152668629",
-   "source": "smartrecruiters",
-   "role": "Operations & Supply Chain",
-   "city": "Other India",
-   "job_type": "Full-time (1-2 yrs)",
-   "min_years": 1,
-   "confidence": 0.5,
-   "posted_at": "2026-09-30T12:08:00.068Z",
-   "first_seen": "2026-11-17T12:13:07Z",
-   "snippet": "This role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reportin"
   },
   {
    "id": "1112a87e28eccc55",
@@ -1775,22 +1743,6 @@
    "snippet": "Verification & Onboarding Operations Executive\n As Verification & Onboarding Operations executive,\u00a0 you will play a critical role in safeguarding our platform and users from fraud, harassment, and other risks. This role requires keen analytical skills, sound judgment, and the abi"
   },
   {
-   "id": "7534753138302460",
-   "title": "Demo Engineer",
-   "company": "Yext",
-   "location": "Hyderabad, India",
-   "url": "https://job-boards.greenhouse.io/yext/jobs/8223691",
-   "source": "greenhouse",
-   "role": "Sales & Business Development",
-   "city": "Hyderabad",
-   "job_type": "Full-time (1-2 yrs)",
-   "min_years": 1,
-   "confidence": 0.6,
-   "posted_at": "2026-09-30T02:48:15-04:00",
-   "first_seen": "2026-11-17T12:04:04Z",
-   "snippet": "Yext (NYSE: YEXT) is the enterprise agentic marketing platform. Built on the world's most comprehensive structured data platform for local businesses, Yext gives brands and their partners the visibility intelligence to win every moment of discovery \u2013 across AI and traditional sea"
-  },
-  {
    "id": "59d0f89cb76a8255",
    "title": "GTM Integration Specialist I",
    "company": "ZoomInfo",
@@ -1901,22 +1853,6 @@
    "posted_at": "2026-07-19T19:54:18-04:00",
    "first_seen": "2026-11-15T19:46:24Z",
    "snippet": "Here at Appian, our values of Intensity and Excellence define who we are. We set high standards and live up to them, ensuring that everything we do is done with care and quality. We approach every challenge with ambition and commitment, holding ourselves and each other accountabl"
-  },
-  {
-   "id": "26580c39aa6a56f7",
-   "title": "Developer Support Engineer (EMEA Shift)",
-   "company": "JFrog",
-   "location": "Bengaluru",
-   "url": "https://join.jfrog.com/job/?job=8255858&gh_jid=8255858",
-   "source": "greenhouse",
-   "role": "Security / IT / DevOps",
-   "city": "Bengaluru",
-   "job_type": "Full-time (1-2 yrs)",
-   "min_years": 1,
-   "confidence": 0.7,
-   "posted_at": "2026-10-06T00:19:44-04:00",
-   "first_seen": "2026-11-15T19:46:24Z",
-   "snippet": "Fast-Frogward Your Career to Years From Now \n Be part of a team where your work takes center stage, shaping the future of software development. At JFrog, we solve critical challenges for leaders like Amazon, Google, and Netflix. Every day brings opportunities to innovate and push"
   },
   {
    "id": "962a292feda9f38c",
