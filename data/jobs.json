@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-26T08:47:55Z",
-  "count": 179,
-  "fetched": 498,
-  "after_dedupe": 400,
+  "updated_at": "2026-11-27T08:58:03Z",
+  "count": 176,
+  "fetched": 503,
+  "after_dedupe": 399,
   "boards": 63,
   "cost": {
    "posts": 440,
@@ -15,19 +15,19 @@
  },
  "jobs": [
   {
-   "id": "d3e5af87ec77e80a",
+   "id": "aaa8f93d77ded32d",
    "title": "Account Development Representative",
    "company": "MongoDB",
-   "location": "Bengaluru",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318466",
+   "location": "Gurugram",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7318558",
    "source": "greenhouse",
    "role": "Sales & Business Development",
-   "city": "Bengaluru",
+   "city": "Delhi NCR",
    "job_type": "Full-time (fresher / 0-1 yr)",
    "min_years": 0,
    "confidence": 0.9,
-   "posted_at": "2026-07-22T09:12:25-04:00",
-   "first_seen": "2026-11-26T08:47:55Z",
+   "posted_at": "2026-07-27T07:46:53-04:00",
+   "first_seen": "2026-11-27T08:58:03Z",
    "snippet": "An Account Development Representative at MongoDB is the starting point for building a serious career in technology sales.\u00a0\n This role is the foundation of our sales organization. You will partner closely with Account Executives to identify new opportunities within strategic accou"
   },
   {
@@ -559,22 +559,6 @@
    "snippet": "WHO WE ARE\nAtlan is building the context layer for enterprise AI. Enterprises are pouring money into AI and most of it dies in production because the AI does not understand the business context around the data. That is the problem Atlan solves.\nGartner has named context the defin"
   },
   {
-   "id": "152d4d58ac14bf53",
-   "title": "IN_Bosch Rexroth India_Engineer / Executive_Embedded Software Developer for Application Software Development and Customer Support",
-   "company": "Bosch",
-   "location": "Bangalore, IN",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150650319",
-   "source": "smartrecruiters",
-   "role": "Software Engineering",
-   "city": "Bengaluru",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": null,
-   "confidence": 0.8,
-   "posted_at": "2026-09-21T09:52:28.217Z",
-   "first_seen": "2026-11-17T13:40:49Z",
-   "snippet": "Unlock Your Potential: A Rewarding Career with Bosch Rexroth India \n Bosch Group is more than 139 years old organization, head quartered in Germany, active across diverse sectors including Automotive, Industrial, Consumer Goods, and Energy & Building Technology.\n Bosch in India i"
-  },
-  {
    "id": "ca3e6e9bcdd0afce",
    "title": "Inside Sales Associate - Apna - Work From Office",
    "company": "apna",
@@ -1087,22 +1071,6 @@
    "snippet": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale \u2014 unleashing the potential of businesses and people. The Elastic Search AI Platform, used by more than 50% of the Fortune 500, brings together the precision"
   },
   {
-   "id": "4850268e4207de63",
-   "title": "Sales Development Representative",
-   "company": "Datadog",
-   "location": "Bangalore, India",
-   "url": "https://careers.datadoghq.com/detail/7531575/?gh_jid=7531575",
-   "source": "greenhouse",
-   "role": "Sales & Business Development",
-   "city": "Bengaluru",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.9,
-   "posted_at": "2026-01-13T20:57:45-05:00",
-   "first_seen": "2026-11-17T12:04:04Z",
-   "snippet": "As a Sales Development Representative (SDR), you will prospect, qualify, and generate customer leads to assist in Datadog\u2019s overall business growth segment. By partnering with internal stakeholders, you will help IT and Technology innovators across markets recognize Datadog\u2019s imp"
-  },
-  {
    "id": "c78d17783c2b5afe",
    "title": "Intermediate Backend Engineer, India",
    "company": "GitLab",
@@ -1357,22 +1325,6 @@
    "posted_at": "2026-10-29T17:40:53.379Z",
    "first_seen": "2026-11-17T12:04:04Z",
    "snippet": "In India, Bosch is a leading supplier of technology and services in the areas of Mobility Solutions, Industrial Technology, Consumer Goods, and Energy and Building Technology. Additionally, Bosch has in India the largest development center outside Germany, for end to end engineer"
-  },
-  {
-   "id": "15dca44bab929e5d",
-   "title": "Process Associate ( CA OR Semi Qualified)",
-   "company": "Bosch",
-   "location": "bangalore, IN",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000158466524",
-   "source": "smartrecruiters",
-   "role": "Finance & Accounting",
-   "city": "Bengaluru",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": 0,
-   "confidence": 0.85,
-   "posted_at": "2026-10-29T09:20:43.875Z",
-   "first_seen": "2026-11-17T12:04:04Z",
-   "snippet": "Bosch Global Software Technologies Private Limited \u00a0is a 100% owned subsidiary of Robert Bosch GmbH, one of the world's leading global supplier of technology and services, offering end-to-end Engineering, IT and Business Solutions. With over 27,000+ associates, it\u2019s the largest s"
   },
   {
    "id": "86ed9b9375683a9a",
