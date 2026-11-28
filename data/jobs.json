@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updated_at": "2026-11-27T08:58:03Z",
+  "updated_at": "2026-11-28T08:19:59Z",
   "count": 176,
-  "fetched": 503,
-  "after_dedupe": 399,
+  "fetched": 506,
+  "after_dedupe": 401,
   "boards": 63,
   "cost": {
    "posts": 440,
@@ -927,6 +927,22 @@
    "snippet": "Bosch Global Software Technologies Private Limited is a 100% owned subsidiary of Robert Bosch GmbH, one of the world's leading global supplier of technology and services, offering end-to-end Engineering, IT and Business Solutions. With over 27,000+ associates, it\u2019s the largest so"
   },
   {
+   "id": "e20750ec33936c5a",
+   "title": "Research Analyst",
+   "company": "NielsenIQ",
+   "location": "Mumbai, IN",
+   "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000164019211",
+   "source": "smartrecruiters",
+   "role": "Data & Analytics",
+   "city": "Mumbai",
+   "job_type": "Full-time (fresher / 0-1 yr)",
+   "min_years": null,
+   "confidence": 0.6,
+   "posted_at": "2026-11-27T12:14:57.544Z",
+   "first_seen": "2026-11-17T12:13:07Z",
+   "snippet": "As a division of NIQ, BASES is a market leader in consulting for marketers of new products.\u00a0 Major manufacturers rely on us to evaluate their new product ideas, accurately predict sales and increase the brand\u2019s potential by helping marketers make decisions at critical stages of t"
+  },
+  {
    "id": "13e59370b99867af",
    "title": "eData Governance",
    "company": "NielsenIQ",
@@ -941,22 +957,6 @@
    "posted_at": "2026-11-26T05:31:47.971Z",
    "first_seen": "2026-11-17T12:13:07Z",
    "snippet": "This role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reportin"
-  },
-  {
-   "id": "e20750ec33936c5a",
-   "title": "Research Analyst",
-   "company": "NielsenIQ",
-   "location": "Mumbai, IN",
-   "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000161731359",
-   "source": "smartrecruiters",
-   "role": "Data & Analytics",
-   "city": "Mumbai",
-   "job_type": "Full-time (fresher / 0-1 yr)",
-   "min_years": null,
-   "confidence": 0.6,
-   "posted_at": "2026-11-16T06:07:15.099Z",
-   "first_seen": "2026-11-17T12:13:07Z",
-   "snippet": "As a division of NIQ, BASES is a market leader in consulting for marketers of new products.\u00a0 Major manufacturers rely on us to evaluate their new product ideas, accurately predict sales and increase the brand\u2019s potential by helping marketers make decisions at critical stages of t"
   },
   {
    "id": "1112a87e28eccc55",
@@ -2019,14 +2019,14 @@
    "title": "Phone Number specialist 1",
    "company": "Twilio",
    "location": "Remote - India",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8334053",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8346263",
    "source": "greenhouse",
    "role": "Customer Support / Success",
    "city": "Remote (India)",
    "job_type": "Full-time (fresher / 0-1 yr)",
    "min_years": 0,
    "confidence": 0.8,
-   "posted_at": "2026-11-05T10:01:06-05:00",
+   "posted_at": "2026-11-05T10:03:53-05:00",
    "first_seen": "2026-11-15T19:40:51Z",
    "snippet": "Who we are\u00a0 \n At Twilio, we\u2019re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to \u00a0hundreds of thousands of businesses\u00a0 and empower millions of developers worldwide to craft personalized customer experiences.\n Our dedicatio"
   },
